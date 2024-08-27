@@ -8,12 +8,12 @@ function Navbar({setShowLogin}) {
     const {getTotalCartAmount} = useContext(StoreContext)
   return (
     <div className='navbar'>
-      <Link to='/' ><img src={assets.logo} alt="logo" className='logo' /></Link>
+      <Link to='/food-delivery/' ><img src={assets.logo} alt="logo" className='logo' /></Link>
       <ul className="navbar-menu">
-        <Link to="/" onClick={() => { setMenu("home")}} className={menu==="home" ? "active" : ""}>home</Link>
-        <a href='#explore-menu' onClick={() => { setMenu("menu")}} className={menu==="menu" ? "active" : ""}>menu</a>
-        <a href='#app-download' onClick={() => { setMenu("mobile")}} className={menu==="mobile" ? "active" : ""}>mobile app</a>
-        <a href='#footer' onClick={() => { setMenu("contact")}} className={menu==="contact" ? "active" : ""}>contact us</a>
+        <Link to="/food-delivery/" onClick={() => { setMenu("home")}} className={menu==="home" ? "active" : ""}>home</Link>
+        <a href='food-delivery/#explore-menu' onClick={() => { setMenu("menu")}} className={menu==="menu" ? "active" : ""}>menu</a>
+        <a href='food-delivery/#app-download' onClick={() => { setMenu("mobile")}} className={menu==="mobile" ? "active" : ""}>mobile app</a>
+        <a href='food-delivery/#footer' onClick={() => { setMenu("contact")}} className={menu==="contact" ? "active" : ""}>contact us</a>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="search-icon" />
