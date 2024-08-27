@@ -45,7 +45,7 @@ function PlaceOrder() {
               <b>{getTotalCartAmount()===0?0:getTotalCartAmount()+2} $</b>
             </div>
           </div>
-          <button onClick={() => navigate("/food-delivery/")}>PAYEMENT</button>
+          <button onClick={() => navigate("/")}>PAYEMENT</button>
         </div>
       </div>
     </form>
